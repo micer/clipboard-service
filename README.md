@@ -5,7 +5,7 @@ I'm using this service to save string from computer to clipboard in Android devi
 
 ## Usage:
 
-Run these commands from computer's command-line terminal. You can find more about ADB [here](https://developer.android.com/studio/command-line/adb).
+Run these commands from computer's command-line terminal. Device needs to be connected via [ADB](https://developer.android.com/studio/command-line/adb).
 
 #### Start service and pass a string value to be saved in device's clipboard:
 ```
