@@ -18,3 +18,19 @@ adb shell input keyevent 279
 ```
 
 [Latest APK is available on HockeyApp.](https://rink.hockeyapp.net/apps/c2292af1c719432cae0cbcb668f1e386)
+
+
+#### Not working?
+
+It can happen that you get this error:
+```
+ ~ adb shell am startservice -a eu.micer.ClipboardService -e text "SampleText"
+Starting service: Intent { act=eu.micer.ClipboardService (has extras) }
+Error: app is in background uid null
+```
+
+You just need to start the app via command:
+```
+adb shell am start -n eu.micer.clipboardservice/eu.micer.clipboardservice.EmptyActivity
+```
+or find the **ClipboardService** in the app list and start it manually.
