@@ -17,8 +17,6 @@ adb shell am startservice -a eu.micer.ClipboardService -e text "SampleText"
 adb shell input keyevent 279
 ```
 
-[Latest APK is available on HockeyApp.](https://rink.hockeyapp.net/apps/c2292af1c719432cae0cbcb668f1e386)
-
 
 #### Not working?
 
