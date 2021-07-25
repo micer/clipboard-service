@@ -19,8 +19,8 @@ class ClipboardService : Service() {
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
         val text = intent.getStringExtra("text")
         val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-        clipboard.primaryClip = ClipData.newPlainText(TAG, text)
+        clipboard.setPrimaryClip(ClipData.newPlainText(TAG, text))
         stopSelf()
-        return Service.START_NOT_STICKY
+        return START_NOT_STICKY
     }
 }
